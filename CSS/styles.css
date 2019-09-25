@@ -1,2 +1,43 @@
-/* CSS Document */
+/* Navigation */
+header {
+	width: 100%;
+	height: 5%;
+	background-color: #52bad5;
+	border-bottom: 1px solid #2C9AB7;
+}
 
+#signature {
+	width: 100%;
+	height: auto;
+	max-width: 1920px;
+	max-height: 1080px;
+}
+
+#hero {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	display: inline-block;
+	background-color: #3390FF;
+	margin-top: 0px;
+}
+
+#about {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	display: inline-block;
+	background-color: #3390FF;
+	margin-top: 0px;
+}
+
+.about {
+	color: #fff;
+	font-weight: bold;
+	text-align: undefined;
+	width: 100%;
+	float: left;
+	margin-top: 15px;
+	margin-left: -15px; /* .about determines color square position */
+	letter-spacing: 4px;
+}
