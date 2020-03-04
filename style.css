@@ -122,12 +122,10 @@ nav {
  */
 .navbutton:hover {
 	color: black;
-	background-color: lightgray;
+	background-color: orange;
 }
 
 .navbutton:active {
-	color: black;
-	background-color: gray;
 }
 
 .navblank {
@@ -159,12 +157,12 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-	white-space: nowrap;
+  white-space: nowrap;
   left: 0%;
   top: 100%;
-  background-color: #f1f1f1;
+  background-color: #555555; /*#f1f1f1;*/
   min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
   z-index: 1;
 }
 
@@ -186,13 +184,13 @@ main {
 	display: grid;
 	background-color: white;
 	grid-template-rows: 4em 2em auto;
-	grid-template-columns: 10% auto 10%;
+	grid-template-columns: minmax(100px, auto) minmax(100px, 1000px) minmax(100px, auto);
 	grid-row-gap: 1em;
 	align-items: center;
 	width: 100vw;
 	height: 85vh;
 	z-index: 1;
-	top: 15vh;
+	top: 11vh;
 }
 
 .bio {
@@ -206,11 +204,12 @@ main {
 .paragraph{
 	grid-column: 2;
 	grid-row: 3;
-	height: 300px;
-	align-self: start;
-	text-align: justify;
+	align-self: flex-start;
+	text-align: left;
 	width: 100%;
+	height: auto;
 }
+
 /* ----------------------------------------------------------------------------------- */
 
 /* Footer --------------------------------------------------------------------------- */
@@ -238,7 +237,8 @@ footer {
 	align-items: center;
 	justify-items: center;
 	grid-template-columns: 1fr;
-	font-size: 2em;
+	font-size: 1.5em;
+	padding: .25em 0 .25em 0;
 }
 
 #contactbutton {
@@ -261,10 +261,10 @@ footer {
 	grid-gap: 25px;
 }
 
-.icon1 { /* Make custom email icon, circle with material design, also style linked in with material design */
+.icon1 { /* Make custom email icon, circle with material design, also style linked in with material design, use whole linked in logo */
 	display: grid;
-	height: 50px;
-	width: 50px;
+	height: 1.25em;
+	width: 1.25em;
 	background-image: url("email.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -273,8 +273,8 @@ footer {
 
 .icon2 { /* Make email dialogue box */
 	display: grid;
-	height: 50px;
-	width: 50px;
+	height: 1.25em;
+	width: 1.25em;
 	background-image: url("email.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -306,8 +306,9 @@ img {
 	display: grid;
 	height: auto;
 	width: 20vw;
-	font-size: 16px;
 	justify-self: center;
+	font-size: 1em;
+	font-weight:normal;
 }
 
 .pages {
@@ -324,7 +325,7 @@ hr {
 }
 
 .heading {
-	font-size: 24px;
+	font-size: 1.5em;
 	padding: 10px 0 10px 0;
 	text-align: left;
 	font-weight: bold; /* Bold text on hover? */
@@ -340,6 +341,7 @@ hr {
 	text-align: center;
 	color: #4B4B4B;
 	background-color: black;
+	font-size: 1em;
 	/* padding: 0 100px 0 100px; */
 }
 
